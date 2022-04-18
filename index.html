@@ -20,6 +20,7 @@
 
 <body>
     <div class="wrapper">
+        <!-- navbar  -->
         <nav>
             <div class="logo">
                 <img src="images/wonderful logo.png" alt="logo" width="135px" />
@@ -36,6 +37,7 @@
                 <i class="fa-regular fa-angle-right"></i>
             </div>
         </nav>
+
         <!-- part 1  -->
         <section class="wrapper-first">
             <div class="line-sidebar-wrapper">
@@ -65,7 +67,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- slide content -->
             <div class="slide-first">
                 <div class="swiper">
@@ -99,10 +100,9 @@
                         <i class="fa-light fa-circle-arrow-right"></i>
                     </div>
                 </div>
-
-
             </div>
         </section>
+
         <!-- part 2  -->
         <section class="wrapper-second">
             <div class="content-second">
@@ -135,10 +135,10 @@
                         <a href="">Beautiful Island</a>
                     </span>
                 </span>
-                
+
                 <span class="list-child">
                     <h3>4</h3>
-                    <span class="list-flex"> 
+                    <span class="list-flex">
                         <p>Pulau indonesia</p>
                         <a href="">Beautiful Island</a>
                     </span>
@@ -155,18 +155,126 @@
                 <span class="more">
                     <span class="more-wrapper">
                         <a href="">See all photos</a>
-                    <i class="fa-regular fa-arrow-right"></i>
+                        <i class="fa-regular fa-arrow-right"></i>
                     </span>
                 </span>
             </div>
         </section>
         <!-- part 3 -->
         <section class="wrapper-third">
+            <div class="content-third">
+                <!-- text intro  -->
+                <div class="content-intro">
+                    <p>Destinasi Favorite</p>
+                    <div class="content-text-flex">
+                        <h2>Temukan Destinasi Favoritemu</h2>
+                        <div class="content-on-flex">
+                            <a href="">Lihat-semua</a>
+                            <i class="fa-regular fa-angle-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- content destinasi  -->
+                <div class="destinasi-wrapper">
+                    <div class="destinasi-show">
+                        <div class="destinasi-img">
+                            <img src="./images/aling-aling waterfall.jpg" alt="">
+                            <p>Aling-Aling</p>
+                        </div>
+                        <div class="destinasi-img">
+                            <img src="./images/merapi 2.jpg" alt="">
+                            <p>Merapi</p>
+                        </div>
+                        <div class="destinasi-img">
+                            <img src="./images/prambanan.jpg" alt="">
+                            <p>Prambanan</p>
+                        </div>
+                        <div class="destinasi-img">
+                            <img src="./images/bali building.jpg" alt="">
+                            <p>Bali</p>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+        </section>
+
+        <!-- part 4  -->
+        <section class="wrapper-fourth">
+            <div class="content-fourth">
+                <div class="content-maps">
+                    <div class="content-maps-text">
+                        <a>CARI TEMPAT WISATA</a>
+                        <h2>Cari Tempat Wisata Didekatmu</h2>
+                        <p href="">
+                            Fitur ini memungkinkan kamu untuk mencari tempat wisata atau tempat yang sedang populer di
+                            daerah kamu dengan begitu kamu akan selalu update dan gak kudet lagi 👍🏻
+                        </p>
+                    </div>
+                    <div class="container-maps">
+                        <!-- <div id="googleMap" style="width:100%;height:380px;"></div> -->
+                        <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                            allowfullscreen
+                            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=indonesia+(Wisata Indonesia)&amp;t=h&amp;z=5&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                            height="450" width="600">
+                        </iframe>
+                    </div>
+                    <div class="content-about">
+                        <div class="content-ab-flex">
+                            <div class="info-about">
+                                <i class="fa-solid fa-location-plus"></i>
+                                <span>
+                                    <p>Popular di dekatmu</p>
+                                    <a>Tempat pariwisata yang populer<br>
+                                        dan pasti dikenal semua orang <br>
+                                        didekatmu</a>
+                                </span>
+                            </div>
+                            <div class="info-about">
+                                <i class="fa-solid fa-heart"></i>
+                                <span>
+                                    <p>Favorit di dekatmu</p>
+                                    <a>Tempat favorit dan disukai semua<br>
+                                        orang orang di sekitar daerah kamu</a>
+                                </span>
+                            </div>
+                            <div class="info-about">
+                                <i class="fa-solid fa-users"></i>
+                                <span>
+                                    <p>Ramai di didekatmu</p>
+                                    <a>TSpot yang paling ramai dikunjungi<br>
+                                        para warga sekaligus<br>
+                                        para wisatawan</a>
+                                </span>
+                            </div>
+                            <div class="info-about">
+                                <i class="fa-solid fa-person-hiking"></i>
+                                <span>
+                                    <p>Menjelajah di didekatmu</p>
+                                    <a>Menjelajah tempat-tempat <br>
+                                        luar biasa menakjubkan didunia</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="wrapper-fifty">
+            <div class="content-fifty">
+                <div class="content-black">
+                    <p>Is time to face to face</p>
+                    <h2>Ready for<br>
+                        Traveling..?</h2>
+                    <div class="lil-line"></div>
+                </div>
+            </div>
         </section>
     </div>
 
-
+    <!-- js area -->
+ 
+    <!-- swiper slide  -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
@@ -188,8 +296,6 @@
                 sticky: true,
             },
             slidesPerView: 2,
-
-
         });
     </script>
 </body>

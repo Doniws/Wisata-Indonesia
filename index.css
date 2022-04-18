@@ -1,14 +1,13 @@
 * {
     margin: 0;
     text-decoration: none;
-    color: #fff;
     padding: 0;
 }
 
 body {
-    font-size: 14px;
+    /* font-size: 14px; */
     /* color: #333; */
-    background-color: rgb(0, 0, 0);
+    /* background-color: rgb(255, 255, 255); */
     width: 100%;
     overflow-x: hidden;
 
@@ -87,7 +86,7 @@ nav .ticket {
     justify-content: center;
     gap: 10px;
     /* width: 15%; */
-    padding: 0 50px;
+    padding: 0 55px;
 }
 
 nav .logo {
@@ -109,6 +108,10 @@ nav .ticket a {
     text-decoration: none;
     font-size: 14px;
     font-weight: 700;
+}
+
+nav .ticket i {
+    color: #fff;
 }
 
 /* content  */
@@ -154,9 +157,10 @@ nav .ticket a {
     font-family: "PT Sans Caption", sans-serif;
     text-transform: uppercase;
     margin: 15px 0;
+    color: #fff;
 }
 
-.content-main .lil-line {
+.lil-line {
     position: relative;
     width: 57px;
     height: 4px;
@@ -372,6 +376,7 @@ nav .ticket a {
     /* line-height: 62px; */
     text-transform: lowercase;
     margin: 15px 0;
+    color: #fff;
 }
 
 /* list about content  */
@@ -479,24 +484,278 @@ nav .ticket a {
 .more {
     padding-top: 15px;
     display: flex;
-    align-items:  center;
+    align-items: center;
     position: relative;
     width: 100%;
     justify-content: flex-end;
     /* flex-direction: row-reverse; */
 }
+
 .more-wrapper {
     gap: 15px;
     display: flex;
     align-items: center;
     position: relative;
 }
+
 .more a {
     font-family: 'PT Sans Caption', sans-serif;
     font-weight: 700;
     font-size: 14px;
+    color: #fff;
     position: relative;
 }
+
 .more i {
     position: relative;
+    color: #fff;
+}
+
+/* section ketiga  */
+.wrapper-third {
+    background: rgb(245, 245, 245);
+    height: auto;
+    /* color: #000 !important; */
+    position: relative;
+}
+
+.content-third {
+    position: relative;
+    top: 0;
+}
+
+.content-intro {
+    font-family: "Open Sans", sans-serif;
+    padding: 100px 50px 0px 50px;
+}
+
+.content-text-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-intro h2 {
+    font-size: 34px;
+    /* font-family: "PT Sans Caption", sans-serif; */
+    position: relative;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #000;
+    line-height: 50px;
+}
+
+.content-intro p {
+    /* font-family: 'PT Sans Caption', sans-serif; */
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: #f6353d;
+}
+
+.content-intro a {
+    /* font-family: "PT Sans Caption", sans-serif; */
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+}
+
+.destinasi-wrapper {
+    padding-top: 25px;
+    position: relative;
+}
+
+.destinasi-show {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 50px;
+    gap: 20px;
+}
+
+.destinasi-img {
+    width: 100%;
+    height: 425px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+}
+
+.destinasi-img img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    border-radius: 10px;
+    transition: transform .5s ease;
+}
+
+.destinasi-img p {
+    position: absolute;
+    bottom: 0;
+    color: #f5f5f5;
+    font-size: 18px;
+    font-weight: 700;
+    /* font-family: "PT Sans Caption", sans-serif; */
+    padding-left: 16px;
+    padding-bottom: 24px;
+    text-transform: capitalize;
+    text-align: center !important;
+}
+
+.destinasi-img:hover img {
+    transform: scale(1.4);
+}
+
+/* section fourth */
+.wrapper-fourth {
+    padding-top: 100px;
+    background: rgb(245, 245, 245);
+    height: auto;
+    /* color: #000 !important; */
+    position: relative;
+}
+.content-fourth {
+    position: relative;
+    /* top: 0; */
+}
+.content-maps {
+    position: relative;
+    padding: 0px 75px;
+}
+.content-maps-text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-family: "Open Sans", sans-serif;
+    /* justify-content: center; */
+}
+
+.content-maps-text a {
+    font-weight: 700;
+    font-size: 14px;
+    color: #f6353d;
+    text-decoration: none;
+}
+
+.content-maps-text h2 {
+    font-size: 34px;
+    position: relative;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #000;
+    line-height: 50px;
+}
+
+.content-maps-text p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #000;
+    width: 65%;
+}
+
+.container-maps , iframe {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+iframe {
+    padding-top: 40px;
+    border-radius: 8px;
+}
+
+/* about  */
+.content-about {
+    position: relative;
+}
+.content-ab-flex {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    position: relative;
+    /* padding: 0 50px; */
+    gap: 20px;
+    padding-top: 35px;
+}
+.info-about {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    font-family: "Open Sans", sans-serif;
+}
+
+.info-about i {
+    font-size: 20px;
+    color: #323232;
+    background: #ffffff;
+    padding: 12px;
+    border-radius: 50%;
+}
+
+.info-about span {
+    /* padding: 10px; */
+    position: relative;
+}
+
+.info-about p {
+    font-size: 18px;
+    color: #323232;
+    font-weight: 700;
+    line-height: 20px;
+}
+.info-about a {
+    font-size: 14px;
+    color: #323232;
+    text-decoration: none;
+}
+
+/* section kelima */
+.wrapper-fifty {
+    padding-top: 100px;
+    background: rgb(245, 245, 245);
+    height: auto;
+    position: relative;
+}
+
+.content-fifty {
+    position: relative;
+}
+.content-black {
+    position: relative;
+    padding: 0px 75px;
+}
+
+.content-main .Negara {
+    position: relative;
+    font-family: "PT Sans Caption", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    color: #f5f5f5;
+}
+
+.content-black h2 {
+    position: relative;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    /* line-height: 62px; */
+    font-family: "PT Sans Caption", sans-serif;
+    text-transform: uppercase;
+    margin: 15px 0;
+    color: rgb(0, 0, 0);
+}
+.content-black p {
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: #f6353d;
 }
