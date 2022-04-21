@@ -460,6 +460,7 @@ nav .ticket i {
     /* align-items: center;
     justify-content: center; */
     gap: 6px;
+    width: 100%;
 }
 
 .grid-img .img-2,
@@ -1129,7 +1130,7 @@ footer {
     display: flex;
     justify-content: center;
     flex-direction: column;
-
+    width: 100%;
 }
 .img-footer {
     width:150px
