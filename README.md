@@ -1,5 +1,5 @@
 # Wisata-Indonesia
-Repositori Untuk Membuat Tentang Wisata Indonesia 
+Repositori Untuk Mempuat Projek Tentang Wisata Indonesia 
 
 Di Buat Tanggal 16 april
 
