@@ -57,6 +57,8 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    gap: 15px;
 }
 
 nav ul li {
@@ -66,7 +68,7 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    padding: 15px;
+    /* padding: 15px; */
     color: #d3dfe8;
     text-decoration: none;
 }
@@ -963,6 +965,7 @@ input {
     position: relative;
     padding-right: 75px;
     width: 100%;
+    padding-bottom: 100px;
 }
 
 /* nav konten */
@@ -991,6 +994,7 @@ input {
 
 .nav-ready ul li a {
     color: #646464;
+    cursor: pointer;
 }
 
 .nav-ready ul li a.active,
@@ -1007,7 +1011,7 @@ input {
     flex-direction: column;
     gap: 30px;
     justify-content: space-between;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
 }
 
 .card-info {
@@ -1062,7 +1066,7 @@ input {
 
 .so-detail {
     display: flex;
-    align-items:center;
+    align-items: center;
     gap: 25px;
 }
 
@@ -1070,9 +1074,11 @@ input {
     display: flex;
     color: #ecb640;
 }
+
 .time-info {
     gap: 6px;
 }
+
 .time-info,
 .price-info,
 .detail-info {
@@ -1081,7 +1087,7 @@ input {
 }
 
 .indicator-slide {
-    position:relative;
+    position: relative;
     padding-top: 30px;
     display: flex;
     align-items: center;
@@ -1090,6 +1096,7 @@ input {
     width: 100%;
     justify-content: flex-end;
 }
+
 .indicator-slide a {
     color: #646464;
     font-size: 16px;
@@ -1106,14 +1113,16 @@ input {
     background: #c4c4c4;
     border-radius: 8px;
     color: #fff;
+    cursor: pointer;
 }
 
 .ac-indicator {
-    background: #334060!important;
+    background: #334060 !important;
 
 }
+
 .ac-numb {
-    color:#000 !important; 
+    color: #000 !important;
 }
 
 footer {
@@ -1125,34 +1134,109 @@ footer {
     font-family: "PT Sans Caption", sans-serif;
     height: 275px;
 }
+
 .content-footer {
-    padding: 0 50px;
+    padding-left: 50px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
 }
+
 .img-footer {
-    width:150px
+    width: 150px
 }
+
 .content-footer img {
     width: 100%;
     height: auto;
 }
+
 .footer-bottom {
     background: #28334f;
     color: #fff;
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: 16px;
+    padding: 16px 0;
     display: flex;
 
 }
+
 .footer-bottom a {
     color: #fff;
     text-decoration: none;
     width: 100%;
     text-align: center;
     font-weight: 700;
+}
+
+
+/* responsive  */
+@media only screen and (max-width: 1024px) {
+
+    /* h1 = 30 , h2 = 20, h3 = 18, h4 = 16, h5 = 14, h6 = 12; */
+    .content-main h1 {
+        font-size: 30px;
+    }
+
+    .content-main .Negara ,.content-main .Perkenalkan,nav ul li a  {
+        font-size: 14px;
+    }
+
+    .swiper-slide {
+        width: 180px !important;
+        height: 236px !important;
+    }
+
+    .content-main a {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .profile-name {
+        font-size: 11px
+    }
+
+    .swiper-slide p {
+        font-size: 16px;
+    }
+
+    nav .ticket a,.list-flex a,.more a {
+        font-size: 13px;
+    }
+
+    nav .ticket i {
+        font-size: 15px;
+    }
+
+    nav .logo {
+        width: 135px;
+    }
+
+    .content-main h2 {
+        font-size: 28px;
+    }
+
+    .list-flex p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .grid-img {
+        width: 400px;
+    }
+    .line-sidebar-wrapper {
+        left: 35px;
+    }
+    .content-main {
+        left: 12.5%;
+    }
+    .list-child h3 {
+        font-size: 45px;
+    }
+    .wrapper-second{
+        height: 65vh;
+    }
+    .destinasi-img {
+        height: 290px;
+    }
 }
