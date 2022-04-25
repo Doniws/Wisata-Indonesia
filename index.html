@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="color-scheme" content="dark light" /> -->
     <title>Beautiful Indonesia</title>
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://doniws.github.io/FontAwesome6Pro/pro/css/all.css">
@@ -34,6 +35,12 @@
                 <a href="" class="Booking">Booking-ticket </a>
                 <i class="fa-regular fa-angle-right"></i>
             </div>
+            <div class="menu-toggle menu-icon" onclick="togglemenu()">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
 
         <!-- part 1  -->
@@ -43,12 +50,17 @@
                 <div class="line-sidebar"></div>
             </div>
             <div class="content-first">
+                <!-- * Ini adalah background nya  -->
+            </div>
+            <div class="matter-content">
                 <div class="content-main">
                     <p class="Negara">Wonderful , Indonesia</p>
                     <h1>The Amazing Beautiful <br>
                         indonesia Nature Insane<br>
                         With Us </h1>
-                    <div class="lil-line"></div>
+                    <div class="wrapper-line">
+                        <div class="lil-line"></div>
+                    </div>
                     <a>"Explore Indonesia with us and you will<br>
                         be amazed by the beauty of nature and<br>
                         the amazing things that we see in it" </a>
@@ -65,38 +77,38 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- slide content -->
-            <div class="slide-first">
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img loading="lazy" src="./images/bromo 2.webp" alt="bromo">
-                            <p>Bromo</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <img loading="lazy" src="./images/komodo-island.webp" alt="">
-                            <p>Komodo Island</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <img loading="lazy" src="./images/Ulun danu beratan temple.webp" alt="">
-                            <p>Ulun danu beratan temple</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <img loading="lazy" src="./images/pulau indo.webp" alt="">
-                            <p>Pulau indonesia</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <img loading="lazy" src="./images/air tejun tumpak sewu lumajang.webp" alt="">
-                            <p>Air tejun tumpak sewu lumajang</p>
+                <!-- slide content -->
+                <div class="slide-first">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="./images/bromo 2.webp" alt="bromo">
+                                <p>Bromo</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="./images/komodo-island.webp" alt="">
+                                <p>Komodo Island</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="./images/Ulun danu beratan temple.webp" alt="">
+                                <p>Ulun danu beratan temple</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="./images/pulau indo.webp" alt="">
+                                <p>Pulau indonesia</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" src="./images/air tejun tumpak sewu lumajang.webp" alt="">
+                                <p>Air tejun tumpak sewu lumajang</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="control-slide">
-                    <div class="swiper-pagination"></div>
-                    <div class="arrow-slide">
-                        <i class="fa-light fa-circle-arrow-left"></i>
-                        <i class="fa-light fa-circle-arrow-right"></i>
+                    <div class="control-slide">
+                        <div class="swiper-pagination"></div>
+                        <div class="arrow-slide">
+                            <i class="fa-light fa-circle-arrow-left"></i>
+                            <i class="fa-light fa-circle-arrow-right"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -105,58 +117,63 @@
         <!-- part 2  -->
         <section class="wrapper-second">
             <div class="content-second">
-                <div class="content-main">
-                    <p class="Perkenalkan">Before your journey is begin.</p>
-                    <h2>let me introduce you<br>
-                        how Beautiful indonesia</h2>
-                    <div class="lil-line"></div>
-                </div>
-            </div>
-            <div class="list-about">
-                <span class="list-child">
-                    <h3>1</h3>
-                    <span class="list-flex">
-                        <p>Bromo</p>
-                        <a href="">Beautiful Cool Mountain</a>
-                    </span>
-                </span>
-                <span class="list-child">
-                    <h3>3</h3>
-                    <span class="list-flex">
-                        <p>Bali</p>
-                        <a href="">Beautiful Temple</a>
-                    </span>
-                </span>
-                <span class="list-child">
-                    <h3>2</h3>
-                    <span class="list-flex">
-                        <p>Komodo Island</p>
-                        <a href="">Beautiful Island</a>
-                    </span>
-                </span>
+                <div class="wrapper-main">
+                    <div class="content-main-sec">
+                        <p class="Perkenalkan">Before your journey is begin.</p>
+                        <h2>let me introduce you<br>
+                            how Beautiful indonesia</h2>
+                        <div class="lil-line"></div>
+                    </div>
 
-                <span class="list-child">
-                    <h3>4</h3>
-                    <span class="list-flex">
-                        <p>Pulau indonesia</p>
-                        <a href="">Beautiful Island</a>
-                    </span>
-                </span>
-            </div>
-            <div class="grid-img">
-                <div class="grid-wrapper">
-                    <span class="img-1"><img loading="lazy" src="./images/bromo.webp" alt=""></span>
-                    <div class="flex-img">
-                        <span class="img-2"><img loading="lazy" src="./images/raja empat.webp" alt=""></span>
-                        <span class="img-3"><img loading="lazy" src="./images/borobudur.webp" alt=""></span>
+                    <div class="list-about">
+                        <span class="list-child">
+                            <h3>1</h3>
+                            <span class="list-flex">
+                                <p>Bromo</p>
+                                <a href="">Beautiful Cool Mountain</a>
+                            </span>
+                        </span>
+                        <span class="list-child">
+                            <h3>3</h3>
+                            <span class="list-flex">
+                                <p>Bali</p>
+                                <a href="">Beautiful Temple</a>
+                            </span>
+                        </span>
+                        <span class="list-child">
+                            <h3>2</h3>
+                            <span class="list-flex">
+                                <p>Komodo Island</p>
+                                <a href="">Beautiful Island</a>
+                            </span>
+                        </span>
+
+                        <span class="list-child">
+                            <h3>4</h3>
+                            <span class="list-flex">
+                                <p>Pulau indonesia</p>
+                                <a href="">Beautiful Island</a>
+                            </span>
+                        </span>
                     </div>
                 </div>
-                <span class="more">
-                    <span class="more-wrapper">
-                        <a href="">See all photos</a>
-                        <i class="fa-regular fa-arrow-right"></i>
+                <div class="grid-img">
+                    <div class="grid-wrapper">
+                        <span class="img-1">
+                            <img loading="lazy" src="./images/bromo.webp" alt="">
+                        </span>
+                        <div class="flex-img">
+                            <span class="img-2"><img loading="lazy" src="./images/raja empat.webp" alt=""></span>
+                            <span class="img-3"><img loading="lazy" src="./images/borobudur.webp" alt=""></span>
+                        </div>
+                    </div>
+                    <span class="more">
+                        <span class="more-wrapper">
+                            <a href="">See all photos</a>
+                            <i class="fa-regular fa-arrow-right"></i>
+                        </span>
                     </span>
-                </span>
+                </div>
             </div>
         </section>
         <!-- part 3 -->
@@ -629,6 +646,11 @@
             slidesPerView: 2,
             lazy: true,
             preloadImages: false,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            loop: true,
         });
     </script>
     <script>
@@ -644,7 +666,30 @@
         elem.addEventListener("input", rangeValue);
     </script>
     <script>
-        // slide 
+        // scroll to fixed
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('nav');
+            var sticky = header.offsetTop;
+            if (window.pageYOffset > sticky) {
+                header.style.position = 'fixed';
+                header.style.top = '0px';
+                header.style.zIndex = '100';
+                header.style.background = '#0004';
+            } else {
+                header.style.position = 'absolute';
+                header.style.background = '#fff0'
+            }
+        });
+
+    </script>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle input');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function () {
+            nav.classList.toggle('slide');
+            
+        });
     </script>
 </body>
 

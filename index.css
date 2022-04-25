@@ -51,6 +51,7 @@ nav {
     position: absolute;
     justify-content: space-between;
     z-index: 10;
+    transition: all 0.5s ease-out;
 }
 
 nav ul {
@@ -135,11 +136,22 @@ nav .ticket i {
     overflow-x: hidden;
 }
 
+.matter-content {
+    display: flex;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    right: 0;
+}
+
 .content-main {
     position: relative;
-    top: 25%;
+    /* top: 25%; */
+    /* left: 15%; */
+    width: 60%;
+    /* .content-main */
+    /* right: 0; */
     left: 15%;
-    width: 50%;
 }
 
 .content-main .Negara {
@@ -259,15 +271,16 @@ nav .ticket i {
 /* slide content  */
 .slide-first {
     /* width:; */
-    position: absolute;
-    top: 30%;
-    /* right: -500px; */
+    position: relative;
+    /* top: 30%; */
     right: 0;
     width: 40%;
+
 }
 
 .swiper-wrapper {
     gap: 10px !important;
+    transition: all .5s ease-out;
 }
 
 .swiper-slide {
@@ -275,6 +288,9 @@ nav .ticket i {
     height: 266px !important;
     object-fit: cover;
     position: relative !important;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: all .5s ease-out;
 }
 
 .swiper-slide img {
@@ -284,7 +300,14 @@ nav .ticket i {
     border-radius: 20px;
     cursor: grab;
     position: relative;
+    transition: transform .5s ease;
 }
+
+.swiper-slide:hover img:hover {
+    transform: scale(1.4);
+    border-radius: 20px;
+}
+
 
 .swiper-slide p {
     position: absolute;
@@ -359,19 +382,30 @@ nav .ticket i {
 .content-second {
     position: relative;
     top: 0%;
+    display: flex;
 }
 
-.content-main .Perkenalkan {
+.wrapper-main {
+    display: flex;
+    position: absolute;
+    top: 0;
+    flex-direction: column;
+    width: 100%;
+    left: 11.5%;
+}
+
+.content-main-sec .Perkenalkan {
     font-family: "PT Sans Caption", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 23px;
     color: #929292;
+    position: relative;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.content-main h2 {
+.content-main-sec h2 {
     font-size: 32px;
     font-family: "PT Sans Caption", sans-serif;
     position: relative;
@@ -385,19 +419,20 @@ nav .ticket i {
 
 /* list about content  */
 .list-about {
-    /* display: flex;
-    align-items: center;
-    margin-right: 30px; */
     display: inline-grid;
-    grid-template-columns: repeat(2, [col-start] 1fr);
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: repeat(2, [col-start] 1fr); */
     grid-gap: 10px;
-    left: 11.25%;
+    width: 40%;
+    /* left: 11.25%; */
     position: relative;
 }
 
 .list-child {
     display: flex;
     align-items: center;
+    width: 100%;
+    /* flex-wrap: wrap; */
 }
 
 .list-child h3 {
@@ -410,12 +445,19 @@ nav .ticket i {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.list-flex {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
 .list-flex p {
     font-family: "PT Sans Caption", sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 26px;
     color: #ffffff;
+    width: 100%;
 }
 
 .list-flex a {
@@ -425,6 +467,7 @@ nav .ticket i {
     font-size: 14px;
     color: #d0d0d0;
     text-decoration: none;
+    width: 100%;
 }
 
 .list-image {
@@ -451,10 +494,11 @@ nav .ticket i {
 }
 
 .grid-wrapper .img-1 {
-    position: relative;
+    /* position: relative; */
     width: 100%;
     object-fit: cover;
     height: 200px;
+    overflow: hidden !important;
 }
 
 .flex-img {
@@ -465,16 +509,22 @@ nav .ticket i {
     width: 100%;
 }
 
+
 .grid-img .img-2,
 .grid-img .img-3 {
     width: 100%;
     object-fit: cover;
+    overflow: hidden !important;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .img-1 img {
     height: 200px;
     width: 100%;
     border-radius: 10px;
+    object-fit: cover;
+    transition: all 0.5s ease;
 }
 
 .img-2 img,
@@ -482,6 +532,14 @@ nav .ticket i {
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+:is(.img-2, .img-3):hover img:hover {
+    transform: scale(1.4);
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 .more {
@@ -706,8 +764,13 @@ iframe {
     font-size: 20px;
     color: #323232;
     background: #ffffff;
-    padding: 12px;
+    /* padding: 14px; */
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .info-about span {
@@ -1043,6 +1106,13 @@ input {
     font-style: normal;
     font-size: 16px;
     line-height: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    /* number of lines to show */
+    line-clamp: 5;
+    -webkit-box-orient: vertical;
 }
 
 .card-img {
@@ -1118,7 +1188,6 @@ input {
 
 .ac-indicator {
     background: #334060 !important;
-
 }
 
 .ac-numb {
@@ -1143,7 +1212,7 @@ footer {
 }
 
 .img-footer {
-    width: 150px
+    width: 150px;
 }
 
 .content-footer img {
@@ -1159,7 +1228,6 @@ footer {
     width: 100%;
     padding: 16px 0;
     display: flex;
-
 }
 
 .footer-bottom a {
@@ -1170,17 +1238,12 @@ footer {
     font-weight: 700;
 }
 
-
 /* responsive  */
 @media only screen and (max-width: 1024px) {
 
     /* h1 = 30 , h2 = 20, h3 = 18, h4 = 16, h5 = 14, h6 = 12; */
     .content-main h1 {
         font-size: 30px;
-    }
-
-    .content-main .Negara ,.content-main .Perkenalkan,nav ul li a  {
-        font-size: 14px;
     }
 
     .swiper-slide {
@@ -1194,15 +1257,7 @@ footer {
     }
 
     .profile-name {
-        font-size: 11px
-    }
-
-    .swiper-slide p {
-        font-size: 16px;
-    }
-
-    nav .ticket a,.list-flex a,.more a {
-        font-size: 13px;
+        font-size: 11px;
     }
 
     nav .ticket i {
@@ -1213,7 +1268,7 @@ footer {
         width: 135px;
     }
 
-    .content-main h2 {
+    .content-main-sec h2 {
         font-size: 28px;
     }
 
@@ -1221,22 +1276,623 @@ footer {
         font-size: 15px;
         line-height: 20px;
     }
+
     .grid-img {
         width: 400px;
     }
+
     .line-sidebar-wrapper {
         left: 35px;
     }
+
     .content-main {
         left: 12.5%;
     }
+
     .list-child h3 {
         font-size: 45px;
     }
-    .wrapper-second{
+
+    .wrapper-second {
         height: 65vh;
     }
+
     .destinasi-img {
         height: 290px;
     }
+
+    .content-ab-flex {
+        display: inline-grid;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        /* grid-gap: 10px; */
+        /* justify-items: center; */
+    }
+
+    .info-about {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-about span {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .info-about a {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        /* width: 160px;  */
+        /* height: 1.2em; */
+        white-space: nowrap;
+        /* font-size: 12px; */
+        text-align: center;
+    }
+
+    .nav-ready ul,
+    .destinasi-img p,
+    .swiper-slide p {
+        font-size: 16px;
+    }
+
+    .card-img {
+        height: 175px;
+    }
+
+    .card-info span p {
+        line-height: 1.35;
+        -webkit-line-clamp: 4;
+        /* number of lines to show */
+        line-clamp: 4;
+    }
+
+    .time-info {
+        display: none;
+    }
+
+    .card-info span h4,
+    .duration h3,
+    .price h3,
+    .special h3,
+    .star h3,
+    .info-about p {
+        font-size: 18px;
+    }
+
+    .content-status {
+        height: 510px;
+        width: 225px;
+    }
+
+    .input-check p,
+    .info-about a,
+
+    .list-flex a,
+    .more a,
+    .card-info span p,
+    .value p,
+    .date::after {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .content-main .Negara,
+    .content-main-sec .Perkenalkan,
+    nav ul li a,
+    .content-maps-text p,
+    .content-intro p,
+    .content-maps-text a,
+    .content-black p,
+    .content-intro a,
+    nav .ticket a {
+        font-size: 14px;
+    }
+
+    .rating,
+    .price,
+    .special {
+        padding-top: 20px;
+    }
+
+    .content-intro h2,
+    .content-maps-text h2,
+    .content-black h2 {
+        font-size: 28px;
+    }
+
+    .content-fifty-right {
+        padding-right: 50px;
+    }
+
+    .content-fifty-left,
+    .content-maps {
+        padding: 0 50px;
+    }
+
+    .destinasi-show {
+        padding: 0 40px;
+    }
+
+    .content-fifty-right {
+        padding-bottom: 65px;
+    }
+
+    .wrapper-fourth,
+    .wrapper-fifty {
+        padding-top: 100px;
+    }
+
+    .content-intro {
+        padding-top: 75px;
+    }
+
+    .info-about p {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .content-fifty {
+        flex-direction: column;
+    }
+
+    .nav-ready {
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+
+    .content-status {
+        width: 100%;
+    }
+
+    /* .card-info {
+        padding: 0 50px;
+    } */
+    .content-fifty-right,
+    .content-fifty-left {
+        padding: 0;
+    }
+
+    .card-info {
+        width: 100%;
+        padding: 0;
+        gap: 0;
+    }
+
+    .content-status {
+        padding: 0;
+        height: 100%;
+    }
+
+    .indicator-slide {
+        padding-bottom: 50px;
+    }
+
+    .wrapper-fifty,
+    .content-maps {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .destinasi-show,
+    .content-intro {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .card-img,
+    .card-info span {
+        margin: 20px;
+    }
+
+    .duration,
+    .price,
+    .special,
+    .rating {
+        margin: 20px;
+
+    }
+
+    .rating {
+        padding-bottom: 30px;
+    }
+
+    .duration {
+        padding-top: 30px;
+    }
+
+    .content-review {
+        padding-top: 30px;
+    }
+
+    .destinasi-show {
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .content-intro h2,
+    .content-maps-text h2,
+    .content-black h2 {
+        line-height: 1.2;
+    }
+
+    .wrapper-second {
+        height: 120vh;
+    }
+
+    .line-sidebar-wrapper {
+        display: none;
+    }
+
+    nav .logo,
+    nav .ticket {
+        padding: 0 30px;
+    }
+
+    .content-main,
+    .slide-first {
+        left: auto;
+        right: auto;
+    }
+
+    .matter-content {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .content-main .profile,
+    .wrapper-line {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .matter-content {
+        top: 20%;
+    }
+
+    .slide-first {
+        width: 80%;
+    }
+
+    .wrapper-first,
+    .content-first {
+        height: 135vh;
+    }
+
+    .content-second {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .grid-img,
+    .wrapper-main {
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        left: auto;
+
+        right: auto;
+    }
+
+    .content-main-sec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content-main-sec h2 {
+        text-align: center;
+    }
+
+    .list-about {
+        width: 50%;
+    }
+
+    .input-check p,
+    .info-about a,
+    .list-flex a,
+    .more a,
+    .card-info span p,
+    .value p,
+    .date::after {
+        font-size: 14px;
+    }
+
+    .content-main .Negara,
+    .content-main-sec .Perkenalkan,
+    nav ul li a,
+    .content-maps-text p,
+    .content-intro p,
+    .content-maps-text a,
+    .content-black p,
+    .content-intro a,
+    nav .ticket a {
+        font-size: 15px;
+    }
+}
+
+/* * Mobile  */
+@media only screen and (max-width: 440px) {
+
+    /* ! navbar responsive  */
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        /* padding: 0 10px; */
+    }
+
+    nav .ticket {
+        display: none;
+    }
+    nav ul {
+        position: absolute;
+        left: 0;
+        flex-direction: column;
+        background-color: #0003;
+        top: 0;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        z-index: -1;
+        transform: translateY(-100%);
+        transition: all ease 0.5s;
+    }
+    nav ul.slide {
+        transform: translateY(0);
+        transition: all 0.5s ease-in-out;
+    }
+
+    nav .logo {
+        /* padding: 0; */
+        padding-left: 10px;
+        width: 120px;
+        width: 25%;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-toggle {
+        display: flex !important;
+        width: 25%;
+        padding-right: 10px;
+    }
+
+    /* navbar end area  */
+
+
+    /* ! content responsive  */
+    .content-main {
+        width: 100%;
+    }
+
+    .list-about,
+    .grid-img {
+        width: 90%;
+    }
+
+    .content-intro h2,
+    .content-maps-text h2,
+    .content-black h2 {
+        font-size: 26px;
+    }
+
+    .destinasi-img {
+        height: 220px;
+    }
+
+    .content-intro h2 {
+        width: 100%;
+    }
+
+    /* .content-on-flex, */
+    .content-maps-text p,
+    .content-maps-text a {
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    .content-ab-flex {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .content-on-flex {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: flex-end;
+        width: 50%;
+    }
+
+    .nav-ready ul {
+        /* font-size: 14px; */
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+    .nav-ready ul::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-ready ul li {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-ready ul li a {
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        line-clamp: 1;
+        -webkit-box-orient: vertical;
+
+    }
+
+    .content-review {
+        padding-top: 10px;
+    }
+
+    .card-info span {
+        margin: 20px 20px 20px 0;
+    }
+
+    .card-info span p {
+        line-clamp: 3;
+        -webkit-line-clamp: 3;
+
+    }
+
+    .destinasi-show {
+        gap: 10px;
+    }
+
+    .card-img {
+        height: 125px;
+    }
+
+    .price-info {
+        display: none;
+    }
+
+    .destinasi-show,
+    .content-intro {
+        padding-left: 15px;
+        padding-right: 15px
+    }
+
+    .wrapper-fifty,
+    .content-maps {
+        padding-left: 20px;
+        padding-right: 20px
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    .card-info span p {
+        line-clamp: 2;
+        -webkit-line-clamp: 2;
+    }
+
+    .content-main h1 {
+        font-size: 26px;
+    }
+
+    .content-main-sec h2 {
+        font-size: 22px;
+    }
+
+    .wrapper-first,
+    .content-first {
+        height: 110vh;
+    }
+
+    .matter-content {
+        top: 15%;
+    }
+
+    .wrapper-second {
+        height: 90vh;
+    }
+
+    .content-intro h2,
+    .content-maps-text h2,
+    .content-black h2 {
+        font-size: 22px;
+    }
+}
+
+
+
+.menu-toggle {
+
+    flex-direction: column;
+    height: 20px;
+    display: none;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    top: -3px;
+    opacity: 0;
+
+    cursor: pointer;
+    z-index: 22;
+}
+
+/* disini tempat untuk mengatur tampilan hamburger */
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    position: relative;
+transition: all .8s cubic-bezier(0, 4.34, 1, -0.39);
+    transition-delay: 0.3s;
+    justify-content: space-between;
+}
+
+/* hamburger menu animation */
+.menu-toggle span:nth-child(2) {
+
+    transform-origin: 0 0;
+    transform: rotate(360deg);
+}
+
+.menu-toggle input:checked~span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px, -1px);
+    background-color: rgb(255, 255, 255);
+}
+
+.menu-toggle span:nth-child(4) {
+
+    transform-origin: 0 0;
+    transform: rotate(-360deg);
+}
+
+.menu-toggle input:checked~span:nth-child(4) {
+    transform: rotate(-45deg) translate(-1px, 0px);
+    background-color: rgb(255, 255, 255);
+}
+
+.menu-toggle input:checked~span:nth-child(3) {
+    opacity: 1;
+    transform: scale(0);
 }
