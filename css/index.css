@@ -1627,7 +1627,9 @@ footer {
     }
 
     .wrapper-second {
-        height: 135vh;
+        /* height: 135vh; */
+        height: 100%;
+        padding: 50px 0px;
     }
 
     .line-sidebar-wrapper {
@@ -1848,6 +1850,9 @@ footer {
 
 
     /* ! content responsive  */
+    .wrapper-second {
+        padding: 35px 0px;
+    }
     .content-main {
         width: 100%;
     }
